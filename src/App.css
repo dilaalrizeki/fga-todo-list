@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.jumbotroon {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #130f40, #686de0);
+  padding: 30px;
+}
+
+.jumbotroon h1 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.jumbotroon .form {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.jumbotroon .form input {
+  border: none;
+  padding: 5px;
+  width: 350px;
+}
+
+.jumbotroon .form .btn-submit {
+  border: none;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f2f6;
+}
+
+.card-body-finish {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  border: 1px solid #cccccc;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 15px;
+  background-image: linear-gradient(to bottom right, #e17055, #fab1a0);
+}
+
+.card-body {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  border: 1px solid #cccccc;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 15px;
+  background-image: linear-gradient(to bottom right, #0984e3, #81ecec);
+}
+
+
+.card {
+  width: 600px;
+  display: flex;
+  direction: row;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: #fff;
+}
+
+.card .text {
+  flex: 3;
+}
+.button-action {
+  flex: 1;
+}
+
+.btn-edit {
+  border: none;
+  background-color: orange;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  margin: 1px;
+}
+
+.btn-delete {
+  border: none;
+  background-color: #ff0044;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  margin: 1px;
+}
+
+.title-job {
+  color: #fff;
+}
+
+.heighttext{
+  display:inline-block;
+  padding:30px 10px;
+  line-height:180%;
 }
