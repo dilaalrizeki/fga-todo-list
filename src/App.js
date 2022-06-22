@@ -28,7 +28,11 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(form)
+    if(form.todo == '') {
+      alert('Pekerjaan tidak boleh kosong!!');
+      return;
+    }
+    
     if(form.index || form.index === 0) {
       const newTodo = todoList.map((e,i) => {
         if(i === form.index) {
@@ -120,7 +124,7 @@ function App() {
             todoList.map((e,i) => (
               <div key={i} className='card'>
                 <div className='action'>
-                  <input type='checkbox' checked={e.status ? true : false} onChange={() => handleCheck(i)} />
+                  <input type='checkbox' checked={e.status ? true : false} onChange={() => handleCheck(i)} required />
                 </div>
                 <div className='text' style={{textDecoration: e.status ? 'line-through' : 'none'}}>
                   {e.todo}
